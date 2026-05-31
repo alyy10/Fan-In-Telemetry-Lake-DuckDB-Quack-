@@ -6,14 +6,7 @@ client-server protocol, beta in v1.5.2) flips it around: one DuckDB process
 becomes a server that serializes writes, and any number of client processes
 attach over HTTP and write concurrently.
 
-```
-  producer (dev-01) ─┐
-  producer (dev-02) ─┤                          ┌─ dashboard (browser)
-  producer (dev-03) ─┼──► Quack server ──────►──┤   polls /api/metrics 1×/s
-  producer (dev-04) ─┘    (telemetry.db)        └─ all aggregation runs
-        N writers          single writer-of-record    SERVER-SIDE via
-        (own processes)    serializes every commit     remote.query()
-```
+<img width="1000" height="400" alt="t" src="https://github.com/user-attachments/assets/a06654b5-f208-4fa8-9981-36b185e2d255" />
 
 ## Run it
 
