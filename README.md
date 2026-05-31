@@ -93,9 +93,6 @@ These cost real debugging time and are worth knowing — Quack is **beta**:
    `nextval('seq')` (even qualified `remote.seq`) resolves against the *client's*
    catalog and errors. We dropped the sequence and order "recent" by `ingest_ts`.
 
-4. **Default port is 9494.** Auth is a shared token (`CREATE SECRET (TYPE quack,
-   TOKEN '...')` on the client must match the server's `token=`).
-
 ## Where this maps in the real world
 
 This is the architecture people often over-build with Kafka + a warehouse when
