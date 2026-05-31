@@ -32,6 +32,7 @@ python run_demo.py --producers 8 --rate 25
 Then watch http://127.0.0.1:8800 — total events, ingest/sec, the per-second
 throughput curve, per-device and per-region fan-in bars, a live metric rollup,
 and the most recent events streaming in.
+<img width="1600" height="687" alt="lnkdn2" src="https://github.com/user-attachments/assets/721c31e8-e0bf-429d-9979-417213912c38" />
 
 ### Or run the pieces by hand (best way to *see* the concurrency)
 
